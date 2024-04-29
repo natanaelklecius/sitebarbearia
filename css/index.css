@@ -43,31 +43,6 @@ margin-bottom: 0px;
     font-weight: normal;
     color: rgb(65, 63, 63);
     font-size: 80pt;
-    padding-left: 20px;
-}
-
-/*quem somos*/
-
-.textquemsomos{
-    margin-top: 100px;
-    justify-content: center;
-    font-weight: normal;
-    font-size: 20px;
-}
-.imget, i{
-    display: inline-block;
-    margin-left: 150px;
-    margin-top: 20px;
-
-}
-
-.container1{
-display: flex;
-align-items: center;
-}
-
-.imget{
-    margin-bottom: 1px;
 }
 
 .link-config2 a{

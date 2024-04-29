@@ -9,29 +9,33 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- icones -->
+  <script src="https://kit.fontawesome.com/d16c61f5fd.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top ">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top" id="nav_color">
     <div class="container-fluid">
       <a class="navbar-brand" href="#inicio"><img src="img/logo_sem_nome (SF).png" 
         width="50" alt="logo barbearia"></a>
-      <button
+      <button style="border-width: 0px"
         data-mdb-collapse-init
         class="navbar-toggler"
-        type="b utton"
+        type="button"
         data-toggle="collapse"
         data-target="#navbar-links"
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
         aria-contrls="navbar-links"
-      > <span class="navbar-toggler-icon"></span>
+      ><i class="fa-solid fa-bars fa-1x" style="color: white; margin-top: -5px;"></i>
       </button>
       <div class="collapse navbar-collapse justify-content" id="navbar-links">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="http://client.tuaagenda.com/c/NatanaelKleciusBarber" target="_blank" class="btn btn-primary" style="color: rgb(253, 255, 240);
+            <a id="borda_botao" class="nav-link active " aria-current="page" href="http://client.tuaagenda.com/c/NatanaelKleciusBarber" target="_blank" class="btn btn-primary" style="color: rgb(253, 255, 240);
             background-color: rgb(151, 139, 29); border-radius: 4px;"><strong>Agendar horário</strong></a>
           </li>
           <li class="nav-item">
@@ -57,22 +61,81 @@
     </div>
   </nav>
 <section id="inicio">
-  <img src="img/banner fumaça (barbearia).jpg" width="100%" height="500" alt="banner barbearia">
+
+  <style>
+
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  #img_banner {
+
+    color: white;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  #img_banner {
+    margin-top: 75px;    
+    color: white;
+  }
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  .navbar {
+
+    background-color: rgba(39, 38, 38, 0.822);
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  .navbar {   
+    background-color: rgba(39, 38, 38);
+  }
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (min-width: 830px, max-width: 992px) {
+  .quemsomos {
+
+  font-size: 150px;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  .quemsomos {   
+    font-size: 40px;
+  }
+}
+
+
+
+
+
+quemsomos
+  </style>
+  <img id="img_banner" class="img-fluid" src="img/banner fumaça (barbearia).jpg" width="" height="" alt="banner barbearia">
 <div class="link-config text-center esp-botton">
-  <a href="http://client.tuaagenda.com/c/NatanaelKleciusBarber" target="_blank" class="btn btn-primary">Agendar horário</a>
+  <a href="http://client.tuaagenda.com/c/NatanaelKleciusBarber" target="_blank" class="btn btn-primary" style="border-width: 0px;">Agendar horário</a>
 </div>
 </section>
 
 </div>
 
 <section id="quemsomos">
-<div class="quemsomos"> <strong>QUEM SOMOS</strong> </div>
 
-  <div class="container1">
+
+  <div class="container">
+    <div class="quemsomos"> <strong>QUEM SOMOS</strong> </div>
 <div class="row">
-  <div class="imget"> <img src="img/estação de trabalho (preto e branco).jpg" width="500" alt="cadeira barbearia"></div>
-  <div class="textquemsomos">
-    <i>        
+  <div class="col-md-6">
+     <img class="img-fluid" src="img/estação de trabalho (preto e branco).jpg" alt="cadeira barbearia">
+</div>
+  <div class="col-md-6">
+            
   <p>Fundada em 2017, a barbearia Natanael Klecius tem <br>
     uma pegada mais moderna sem perder a origem <br>
    classica da barbearia.</p>
@@ -83,7 +146,7 @@
   <p>Para melhorar ainda mais sua experiencia, contamos <br>
      com agenda totalmente online e automatizada para  <br>
      evitar filas, valorizando o seu tempo.</p> 
-        </i>
+      
   </div>
 </div>
   </div>
@@ -97,7 +160,7 @@
     </section>
 
    <div class="link-config2.1"><div class="link-config text-center esp-botton">
-    <a href="http://client.tuaagenda.com/c/NatanaelKleciusBarber" target="_blank" class="btn btn-primary">Outros Serviços</a>
+    <a href="http://client.tuaagenda.com/c/NatanaelKleciusBarber" target="_blank" class="btn btn-primary" style="border-width: 0px;">Outros Serviços</a>
   </div>
   </div></div>
 
